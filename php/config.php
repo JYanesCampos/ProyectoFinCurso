@@ -1,11 +1,11 @@
 <?php
 
-// class Config {
-//     //BASE DE DATOS
-//     const BD_HOST = "localhost";
-//     const BD_NAME = "casa_vacaciones";
-//     const BD_USER = "root";
-//     const PASSWORD = "";
-// }
+class Config {
+    //BASE DE DATOS
+    const BD_HOST = MYSQLHOST;
+    const BD_NAME = MYSQLDATABASE;
+    const BD_USER = MYSQLUSER;
+    const PASSWORD = MYSQLPASSWORD;
+}
 
 ?>
