@@ -11,7 +11,7 @@ echo "</pre>";
 include_once ('./php/config.php');
 include_once('./php/funciones.php');
 
-$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME);
+$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME,Config::BD_PORT);
 mysqli_set_charset($conexion, "utf8");
 
 ?>
@@ -502,7 +502,7 @@ mysqli_set_charset($conexion, "utf8");
       <div class="row" id="areaSolicitudInformacion">
         <div class="col">
           <p class="text-center h3">Solicitud de información</p>
-          <form>
+          <form id="form_solicitud_informacion" name="form_solicitud_informacion">
             <div class="form-group row mt-3">
               <label class="col-4 col-form-label text-end" for="tituloSolicitud">Título</label> 
               <div class="col-5">
@@ -602,14 +602,14 @@ mysqli_set_charset($conexion, "utf8");
 
     </div>
 
-    <!-- REDES SOCIALES -->
+    <!-- REDES SOCIALES DESCOMENTAR CUANDO VAYA A HACER LA PRESENTACION-->
     <div class="container displayNone view" id="containerSocial">
         <div class="row">
           
-          <div class="col p-4">
+          <!-- <div class="col p-4">
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-7a0f4d02-08bf-4e33-a4a0-4d14d889fd1d"></div>
-          </div>
+          </div> -->
 
         </div>
     </div>
