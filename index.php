@@ -11,7 +11,7 @@ echo "</pre>";
 include_once ('./php/config.php');
 include_once('./php/funciones.php');
 
-$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME);
+$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME,Config::BD_PORT);
 mysqli_set_charset($conexion, "utf8");
 
 ?>
