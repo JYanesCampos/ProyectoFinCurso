@@ -603,10 +603,10 @@ mysqli_set_charset($conexion, "utf8");
     <div class="container displayNone view" id="containerSocial">
         <div class="row">
           
-          <!-- <div class="col p-4">
+          <div class="col p-4">
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-7a0f4d02-08bf-4e33-a4a0-4d14d889fd1d"></div>
-          </div> -->
+          </div> 
 
         </div>
     </div>
