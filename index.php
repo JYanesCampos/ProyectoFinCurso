@@ -11,7 +11,7 @@ echo "</pre>";
 include_once ('./php/config.php');
 include_once('./php/funciones.php');
 
-$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME,Config::BD_PORT);
+$conexion = mysqli_connect(Config::BD_HOST,Config::BD_USER,Config::PASSWORD,Config::BD_NAME);
 mysqli_set_charset($conexion, "utf8");
 
 ?>
@@ -452,12 +452,9 @@ mysqli_set_charset($conexion, "utf8");
 
           <div class="col">
             <div class="card my-3">
-              <!--
+              
                 <img src="img/<?=$imagenBDD['nombre']?>.jpg" alt="<?=$imagenBDD['texto_alt']?>">
-              -->
-      <?php
-              echo '<img src="data:image/jpeg;base64,'.base64_encode($imagenBDD['img']).'" alt="'.$imagenBDD['texto_alt'].'"/>';
-      ?>
+              
               <div class="card-body text-center">
                 <p class="h4"><?=$imagenBDD['titulo']?></p>
                 <p><?=$imagenBDD['texto']?></p>
